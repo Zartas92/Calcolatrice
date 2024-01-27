@@ -45,15 +45,15 @@ function addOperator(operator) {
     currentInput += ` ${operator} `;
     usedOperator = operator;
 
-    for (let i = 0; i < currentInput.length; i++) {
-        if (currentInput[i] == usedOperator) {
-            firstValue = currentInput.slice(0, i);
-            secondValue = currentInput.slice(i + 1, currentInput.length - 1);
-        }
-    }
-    currentInput = `${firstValue}${usedOperator}${secondValue}`;
+    // for (let i = 0; i < currentInput.length; i++) {
+    //     if (currentInput[i] == usedOperator) {
+    //         firstValue = currentInput.slice(0, i);
+    //         secondValue = currentInput.slice(i + 1, currentInput.length - 1);
+    //     }
+    // }
+    // currentInput = `${firstValue}${usedOperator}${secondValue}`;
 
-    currentInput = operationSwitch(firstValue, secondValue, usedOperator);
+    // currentInput = operationSwitch(firstValue, secondValue, usedOperator);
 
     updateDisplay();
 }
