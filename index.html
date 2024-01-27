@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="name"> Calculator 2.0 </div>
+    <div class="column">
+        <div class="calculator">
+            <input type="text" id="display">
+            <button onclick="addNumber('1')" class="number">1</button>
+            <button onclick="addNumber('2')" class="number">2</button>
+            <button onclick="addNumber('3')" class="number">3</button>
+            <button onclick="addOperator('+')" class="operator">+</button>
+            <button onclick="addNumber('4')" class="number">4</button>
+            <button onclick="addNumber('5')" class="number">5</button>
+            <button onclick="addNumber('6')" class="number">6</button>
+            <button onclick="addOperator('-')" class="operator">-</button>
+            <button onclick="addNumber('7')" class="number">7</button>
+            <button onclick="addNumber('8')" class="number">8</button>
+            <button onclick="addNumber('9')" class="number">9</button>
+            <button onclick="addOperator('X')" class="operator">X</button>
+            <button onclick="addNumber('0')" class="number">0</button>
+            <button onclick="addFullStop('.')" class="fullStop">.</button>
+            <button onclick="result('=')" class="result">=</button>
+            <button onclick="addOperator('/')" class="operator">/</button>
+            <button onclick="cancell()" class="delete">C</button>
+            <div id="fill"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

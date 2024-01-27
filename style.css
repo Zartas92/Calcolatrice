@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: " . nome ."
+        ". column .";
+    background-color: cadetblue;
+}
+
+.name {
+    grid-area: nome;
+    background-color: burlywood;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    grid-area: column;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 70%;
+    width: 50%;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "screen screen screen screen";
+}
+
+#display {
+    grid-area: screen;
+    background-color: aliceblue;
+    text-align: start;
+    margin: 5px;
+    font-size: x-large;
+}
+
+.calculator>button {
+    font-size: x-large;
+}
+
+#fill {
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: burlywood;
+}
+
+button:hover {
+    cursor: pointer;
+}
